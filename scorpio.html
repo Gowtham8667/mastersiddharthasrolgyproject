@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+    <meta name="viweport" content="width=device-width,initial scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+      *    {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family:'poppins', sans-serif;
+      }
+      body{
+          background: black;
+      }
+      section{
+          position: relative;
+          padding: 100px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      #section1{
+          background-image: url(back2.jpeg);
+          background-repeat:no-repeat;   
+          background-size: cover;
+      }
+      header{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: 20px 100px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .logo {
+          position: relative;
+         max-width: 80px;
+                   
+          
+      }
+     
+      header ul{
+          position: relative;
+          display: flex;
+      }
+      header ul li{
+          list-style: none;
+      }
+      header ul li a{
+          display: inline-block;
+          color: #fab619;
+          font-weight: 400;
+          margin-left: 40px;
+          text-decoration: none;
+          transform: scale(0.9);
+      }
+      header ul li a:active{
+          transform: scale(.95);
+      }
+      .content{
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+      }
+      .content .textBox{
+          position: relative;
+          max-width: 600px;
+      }
+      .content .textBox h2{
+          color: floralwhite;
+          font-size: 4em;
+          line-height: 1.4em;
+          font-weight: 500;
+      }
+      .content .textBox h2 span{
+          color: #fab619;
+          font-size: 1.2em;
+          font-weight: 900;
+      }
+      .content .textBox p{
+          color: #dea421;
+          font-weight: 400;
+      }
+      
+      .content .textBox a{
+          display: inline-block;
+          margin-top: 20px;
+          padding: 8px 20px;
+          background: #fab619 ;
+          color:black;
+          border-radius: 40px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          text-decoration: none;
+          transform: scale(0.8);
+          
+      }
+      .content .textBox a:active{
+          transform: scale(.95);
+      }
+      .content .imgBox{
+          width: 600px;
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 50px;
+          margin-top: 50px;
+      }
+      .content .imgBox img{
+        max-width: 340px;
+          animation: magic;
+          animation-timing-function: linear;
+          animation-duration: 25s;
+          animation-iteration-count: infinite;
+          
+      }
+      @keyframes magic{
+          from{
+              transform: rotateZ(0deg);
+          }
+          to{
+              transform: rotateZ(360deg);
+          }
+          
+      }
+      .thumb{
+          position: absolute;
+          left: 50%;
+          bottom: 20px;
+          transform: translateX(-50%);
+          display: flex;
+        
+      }
+      .thumb li{
+          list-style: none;
+          display: inline-block;
+          margin: 0 20px;
+          cursor: pointer;
+          transition: 0.5s;
+      }
+      .thumb li:hover{
+          transform: translateY(-15px);
+      }
+      .sci{
+          position: absolute;
+          top: 40%;
+          right: 30px;
+          transform: translateX(-50%);
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          
+      }
+      .sci li{
+          list-style: none;
+      }
+      .sci li a{
+          display: inline-block;
+          margin: 5px 0;
+          transform: scale(0.6);
+          background:black ;
+          border-radius: 50%;
+          display: inline-flex;
+          height: 60px;
+          width: 60px;
+          text-decoration: none;
+          color:#fab619;
+          font-size: 20px;
+          box-shadow: 0 0 20px 0 #7f7f7f3d;
+          cursor: pointer;
+          justify-content: center;
+          align-items: center;
+        transition: 0.5s;
+        
+      }
+      .sci li a:active{
+          transform: scale(.95);
+      }
+      header ul li{
+          position: relative;
+      }
+      header ul li ul{
+          position: absolute;
+          display: none;
+          left: 0;
+          width: 300px;
+         z-index: 1;
+         
+      }
+      header ul li ul li{
+          width: 100%;
+          height: 40px;
+          border-top: 1px solid rgba(0,0,0,.1);
+          overflow: hidden;
+           background-image:linear-gradient(to right,#000000,#996c05,#000000) ;
+          justify-content: center;
+          align-items: center;
+          margin-top: 5px;
+      }
+      header ul li:hover >ul{
+          display: initial;
+          padding-top: 20px;
+          
+      }
+      .ser1 img{
+         
+          width: 400px;
+          border-radius: 200px;
+          transform: scale(0.9);
+          transition: 1s;
+      }
+      .ser1 img:hover{
+          transform: scale(.96);
+      }
+      .ser1 h4{
+          color: #fab619;
+          word-spacing: 4px;
+          text-align: center;
+          
+          font-size: 1.2em;
+          letter-spacing: 1px;
+          
+      }
+      .ser1 h4 span{
+          color: whitesmoke;
+      }
+      .ser1 h1{
+          color: whitesmoke;
+          word-spacing: 5px;
+          letter-spacing: 2px;
+          font-size: 1.8em;
+          text-align: center;
+          padding-left: 30px;
+      }
+      .ser1 h1 span{
+          color:  #fab619;
+      }
+      .ser1 p{
+          color: dimgray;
+          word-spacing: 1px;
+          letter-spacing: 1px;
+          justify-content: space-evenly;
+      }
+      .ser1 a{
+          color:skyblue;
+          text-decoration: none;
+      }
+      .ser1 h3{
+          color: whitesmoke;
+          word-spacing: 1px;
+          letter-spacing: 1px;
+          margin-left: 10%;
+      }
+      .ser1 h3 span{
+          color: #fab619;
+          font-weight: bolder;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+      }
+        footer{
+            position: relative;
+            width: 100%;
+            background: #fab619;
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+     
+        footer .menu1
+        
+        {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            
+            
+        }
+       
+        footer .menu1 li
+        {
+            list-style: none;
+            
+        }
+        
+        footer .menu1 li a{
+            font-size: 1.2em;
+            color: #000;
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+            opacity: 0.75;
+        }
+         footer .menu1 li a:hover{
+           opacity: 1;
+        }
+        footer p{
+            color: #000;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        footer .wave{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url(wave.png);
+            background-size: 1000px 100px;
+        }
+        footer .waves #wave1{
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: wave1 4s linear infinite;
+        }
+         footer .waves #wave2{
+            z-index: 999;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: wave2 4s linear infinite;
+        }
+         footer .waves #wave3{
+            z-index: 1000;
+            opacity: 0.2;
+            bottom: 15px;
+            animation: wave1 3s linear infinite;
+        }
+         footer .waves #wave4{
+            z-index: 999;
+            opacity: 0.7;
+            bottom: 20px;
+            animation: wave2 3s linear infinite;
+        }
+        @keyframes wave1{
+            0%{
+                background-position-x:1000px;
+            }
+            100%{
+                 background-position-x:0px;
+            }
+        }
+        @keyframes wave2{
+            0%{
+                background-position-x:0px;
+            }
+            100%{
+                 background-position-x:1000px;
+            }
+        }
+         .sci1{
+          
+         position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+         
+          
+      }
+      .sci1 li{
+          list-style: none;
+          margin: 10px;
+      }
+      .sci1 li a{
+          display: inline;
+          margin: 5px 0;
+          background:black ;
+          border-radius: 50%;
+          display: inline-flex;
+          height: 40px;
+          width: 40px;
+          text-decoration: none;
+          color:#fab619;
+          font-size: 20px;
+          box-shadow: 0 0 20px 0 #7f7f7f3d;
+          cursor: pointer;
+          justify-content: center;
+          align-items: center;
+        transition: 0.5s;
+          
+        
+      }
+      .sci1 li a:hover{
+          transform: translateY(-15px);
+      }
+    </style>
+    </head>
+    <body>
+    <section id="section1">
+        <div class="circle"></div>
+        <header>
+        <a href="#" ><img src="logo1.png" class="logo" ></a>
+             <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services +</a>
+                 <ul>
+                        <li><a href="ser1.html">Husband and Wife Dispute</a></li>
+                        <li><a href="ser.html">Black Magic removal Expert</a></li>
+                        <li><a href="ser2.html">Love Spell Caster removal </a></li>
+                        <li><a href="ser3.html">Love Psychic Reader</a></li>
+                        <li><a href="ser4.html">Voodoo Spells removal </a></li>
+                        <li><a href="ser5.html">Evil Spirit Removal</a></li>
+                        <li><a href="ser6.html">Spiritual Healing</a></li>
+                        <li><a href="ser7.html">Get Ex Love Back</a></li>
+                        <li><a href="ser8.html">Jealousy and Curse</a></li>
+                        <li><a href="ser9.html">Stop Separation and Divorce</a></li>
+                        <li><a href="ser10.html">Negative Energy Removal</a></li>
+                        <li><a href="ser11.html">Family Problem Solutions</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pooja Service+</a>
+                    <ul>
+                        <li><a href="hanuman.html">Hanuman pooja</a></li>
+                        <li><a href="shivan.html"> Lord Shivan Pooja</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zodiac Sign+</a>
+                    <ul>
+                        <li><a href="capricon.html">Capricon</a></li>
+                        <li><a href="aquarius.html">Aquarius</a></li>
+                        <li><a href="pisces.html">Pisces </a></li>
+                        <li><a href="aries.html">Aries</a></li>
+                        <li><a href="taurus.html">Taurus </a></li>
+                        <li><a href="gemini.html">Geminil</a></li>
+                        <li><a href="cancer.html">Cancer</a></li>
+                        <li><a href="leo.html">Leo</a></li>
+                        <li><a href="libra.html">Libra</a></li>
+                        <li><a href="scorpio.html">Scorpio</a></li>
+                        <li><a href="virgo.html">Virgo</a></li>
+                        <li><a href="sagittarius.html">Sagittarius</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+        <div class="textBox">
+            <h2>It's not just Astrology<br>It's<span>Black Magic</span></h2>
+            
+<p> OUR SERVICES: Husband and Wife Dispute,Black Magic removal Expert,Love Spell Caster removal,Love Psychic Reader,Voodoo Spells removal, Spiritual Healing,Evil Spirit Removal,Witchcraft Spells removal,Get Ex Love Back,Jealousy and Curse,Stop Separation and Divorce,Negative Energy Removal,Family Problem Solutions.</p>
+            <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+            <img src="img5.png" class="magic"></div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img5.png" height="50px" width="50px" onclick="imgSlider('img5.png')" ></li>
+             <li><img src="img3.png" height="50px" width="50px" onclick="imgSlider('img3.png')" ></li>
+             <li><img src="img7.png" height="50px" width="50px" onclick="imgSlider('img7.png')" ></li>
+        </ul>
+        <ul class="sci">
+        <li><a class="fa fa-facebook" href="#"></a></li>
+             <li><a class="fa fa-twitter" href="#"></a></li>
+             <li><a class="fa fa-instagram" href="#"></a></li>
+        </ul>
+        </section>
+        <script type="text/javascript">
+           function imgSlider(anything){
+               document.querySelector('.magic').src = anything;
+           }
+        </script>
+        <section>
+        <div class="ser1">
+            <center><a href="scorpio.html"><img src="scorpio.webp"></a></center><br><br><br>
+           <h4>Astrologer<span> Siddharth :</span></h4><br><br>
+            <h1>"WHAT'S <span>SIGN"</span></h1><br><br>
+            <p>We’ve all been asked this question — whether on a date, by an acquaintance or that frenemy. Whether or not you’ve ever read in-depth about the zodiac signs doesn’t matter because I can guarantee you know your zodiac sign. You wouldn’t be reading this article if you weren’t at least a little bit curious about astrology.<br><br>
+
+As a basic definition: Astrology is an art form that uses the placement of the planets and luminaries to give insight into aspects of one’s psychology, as well as make life predictions.<br><br>
+
+Some back-story (drum roll, please): Since the birth of mankind, we have always looked to the stars. By our very natures, we are curious animals — eager to better understand the world around us. Not only have we sought to create our imprint as a civilization on the Earth, but we have sought to understand our place in the cosmos and what our purpose here is.<br><br>
+
+The zodiac is composed of 12 different signs — each with its own personality traits, strengths, weaknesses and characteristics. So if you’ve ever wondered. “Why are you like that?” about someone — this is a big part of the reason why.<br><br>
+
+As a little disclaimer, your Sun sign is tied to your exact day of birth and it is what most people are referencing when they ask about your zodiac sign. This ties to your core personality and psychological profile — hinting at what is important to you throughout your lifetime.<br><br>
+
+However, the Sun sign is just one aspect in your birth chart that helps illuminate what makes you entirely unique. In fact, you have many other placements that are also deeply insightful: your Rising Sign/Ascendant, Moon Sign and beyond. After all, astrology teaches us that you are cosmic because you have all the stars inside of you.</p>
+<br><br><br>
+
+
+            <h1>SCOR<span>PIO</span></h1><br><br><br>
+            <h3>Element:<span>  Water</span></h3>
+            <h3>Quality:<span>  Fixed</span></h3>
+            <h3>Power Color:<span>  Crimson and burgundy</span></h3>
+            <h3>Ruling Planet:<span>  Pluto and Mars</span></h3>
+            <h3>Symbol:<span>   Scorpion</span></h3><br><br>
+            
+            <p>Intense, passionate and cunning, Scorpios are “all or nothing” kinds of people. They have a natural ability to enchant others, utilizing their powerful minds and auras to dominate situations and relationships. Deeply emotional, they can brood in the extremes of their feelings. Craving intimacy and psychological depth above all, they navigate the world like a game in order to win and conquer whatever they set their sights upon. With an irresistible quality, Scorpios can be quite secretive, sexual and subtle. They also tend to be very fixed in their ways — unrelenting until they get what they want. While this intensity may seem shocking, Scorpios actually value transformation and rebirth through their heart regardless if a situation proceeds for better or for worse.<br><br><br>
+
+                </p>
+            </div>
+        </section>
+         <footer>
+            <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+            </div>
+         
+            <ul class="menu1">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                     <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <p>Copyright © 2022 www.astrologersiddharth.com - All Rights Reserved.</p>
+            <ul class="sci1">
+        <li><a class="fa fa-facebook" href="#"></a></li>
+             <li><a class="fa fa-twitter" href="#"></a></li>
+             <li><a class="fa fa-instagram" href="#"></a></li>
+        </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viweport" content="width=device-width,initial scale=1.0">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        body {
+            background: black;
+        }
+        
+        section {
+            position: relative;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #section1 {
+            background-image: url(back2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            position: relative;
+            max-width: 80px;
+        }
+        
+        header ul {
+            position: relative;
+            display: flex;
+        }
+        
+        header ul li {
+            list-style: none;
+        }
+        
+        header ul li a {
+            display: inline-block;
+            color: #fab619;
+            font-weight: 400;
+            margin-left: 40px;
+            text-decoration: none;
+            transform: scale(0.9);
+        }
+        
+        header ul li a:active {
+            transform: scale(.95);
+        }
+        
+        .content {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .content .textBox {
+            position: relative;
+            max-width: 600px;
+        }
+        
+        .content .textBox h2 {
+            color: floralwhite;
+            font-size: 4em;
+            line-height: 1.4em;
+            font-weight: 500;
+        }
+        
+        .content .textBox h2 span {
+            color: #fab619;
+            font-size: 1.2em;
+            font-weight: 900;
+        }
+        
+        .content .textBox p {
+            color: #dea421;
+            font-weight: 400;
+        }
+        
+        .content .textBox a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            background: #fab619;
+            color: black;
+            border-radius: 40px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transform: scale(0.8);
+        }
+        
+        .content .textBox a:active {
+            transform: scale(.95);
+        }
+        
+        .content .imgBox {
+            width: 600px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+            margin-top: 50px;
+        }
+        
+        .content .imgBox img {
+            max-width: 340px;
+            animation: magic;
+            animation-timing-function: linear;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes magic {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+        
+        .thumb {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        
+        .thumb li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .thumb li:hover {
+            transform: translateY(-15px);
+        }
+        
+        .sci {
+            position: absolute;
+            top: 40%;
+            right: 30px;
+            transform: translateX(-50%);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .sci li {
+            list-style: none;
+        }
+        
+        .sci li a {
+            display: inline-block;
+            margin: 5px 0;
+            transform: scale(0.6);
+            background: black;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 60px;
+            width: 60px;
+            text-decoration: none;
+            color: #fab619;
+            font-size: 20px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+        
+        .sci li a:active {
+            transform: scale(.95);
+        }
+        
+        header ul li {
+            position: relative;
+        }
+        
+        header ul li ul {
+            position: absolute;
+            display: none;
+            left: 0;
+            width: 300px;
+            z-index: 1;
+        }
+        
+        header ul li ul li {
+            width: 100%;
+            height: 40px;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            overflow: hidden;
+            background-image: linear-gradient(to right, #000000, #996c05, #000000);
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        header ul li:hover>ul {
+            display: initial;
+            padding-top: 20px;
+        }
+        
+        .container13 {
+            display: grid;
+            place-items: center;
+            padding-top: 20px;
+        }
+        
+        .container13 h1 {
+            margin-bottom: 2rem;
+            color: #fab619;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 24rem;
+            gap: 1rem;
+        }
+        
+        input,
+        select,
+        textarea {
+            padding: 1.5rem;
+            background: transparent;
+            border: 1px solid #333;
+            box-shadow: 1px 1px 15px #f0efec;
+            border-radius: 20px;
+            color: #fab619;
+        }
+        
+        input:hover,
+        select:hover,
+        textarea:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        button {
+            color: #333;
+            background: #fab619;
+            border-radius: 20px;
+            width: 100px;
+            height: 40px;
+            font-size: 1em;
+            margin-left: 40%;
+            margin-top: 15px;
+            border: none;
+        }
+        
+        button:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        option {
+            color: #333;
+            background: #fab619;
+        }
+        
+        option:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        footer {
+            position: relative;
+            width: 100%;
+            background: #fab619;
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        footer .menu1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        footer .menu1 li {
+            list-style: none;
+        }
+        
+        footer .menu1 li a {
+            font-size: 1.2em;
+            color: #000;
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+            opacity: 0.75;
+        }
+        
+        footer .menu1 li a:hover {
+            opacity: 1;
+        }
+        
+        footer p {
+            color: #000;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        footer .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url(wave.png);
+            background-size: 1000px 100px;
+        }
+        
+        footer .waves #wave1 {
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: wave1 4s linear infinite;
+        }
+        
+        footer .waves #wave2 {
+            z-index: 999;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: wave2 4s linear infinite;
+        }
+        
+        footer .waves #wave3 {
+            z-index: 1000;
+            opacity: 0.2;
+            bottom: 15px;
+            animation: wave1 3s linear infinite;
+        }
+        
+        footer .waves #wave4 {
+            z-index: 999;
+            opacity: 0.7;
+            bottom: 20px;
+            animation: wave2 3s linear infinite;
+        }
+        
+        @keyframes wave1 {
+            0% {
+                background-position-x: 1000px;
+            }
+            100% {
+                background-position-x: 0px;
+            }
+        }
+        
+        @keyframes wave2 {
+            0% {
+                background-position-x: 0px;
+            }
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+        
+        .sci1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sci1 li {
+            list-style: none;
+            margin: 10px;
+        }
+        
+        .sci1 li a {
+            display: inline;
+            margin: 5px 0;
+            background: black;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 40px;
+            width: 40px;
+            text-decoration: none;
+            color: #fab619;
+            font-size: 20px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+        
+        .sci1 li a:hover {
+            transform: translateY(-15px);
+        }
+        
+        #Contact {
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        #Contact span {
+            display: inline;
+            margin: 5px 0;
+            background: #fab619;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 40px;
+            width: 40px;
+            color: #333;
+            font-size: 20px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #Info p {
+            color: whitesmoke;
+        }
+        
+        #Info a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding-top: 10px;
+        }
+        
+        #Info h3 {
+            color: #fab619;
+        }
+        
+        #Location {
+            margin-left: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="section1">
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo1.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services +</a>
+                    <ul>
+                        <li><a href="ser1.html">Husband and Wife Dispute</a></li>
+                        <li><a href="ser.html">Black Magic removal Expert</a></li>
+                        <li><a href="ser2.html">Love Spell Caster removal </a></li>
+                        <li><a href="ser3.html">Love Psychic Reader</a></li>
+                        <li><a href="ser4.html">Voodoo Spells removal </a></li>
+                        <li><a href="ser5.html">Evil Spirit Removal</a></li>
+                        <li><a href="ser6.html">Spiritual Healing</a></li>
+                        <li><a href="ser7.html">Get Ex Love Back</a></li>
+                        <li><a href="ser8.html">Jealousy and Curse</a></li>
+                        <li><a href="ser9.html">Stop Separation and Divorce</a></li>
+                        <li><a href="ser10.html">Negative Energy Removal</a></li>
+                        <li><a href="ser11.html">Family Problem Solutions</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pooja Service+</a>
+                    <ul>
+                        <li><a href="hanuman.html">Hanuman pooja</a></li>
+                        <li><a href="shivan.html"> Lord Shivan Pooja</a></li>
+                        <li><a href="kali pooja.html"> Kali Pooja</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zodiac Sign+</a>
+                    <ul>
+                        <li><a href="capricon.html">Capricon</a></li>
+                        <li><a href="aquarius.html">Aquarius</a></li>
+                        <li><a href="pisces.html">Pisces </a></li>
+                        <li><a href="aries.html">Aries</a></li>
+                        <li><a href="taurus.html">Taurus </a></li>
+                        <li><a href="gemini.html">Geminil</a></li>
+                        <li><a href="cancer.html">Cancer</a></li>
+                        <li><a href="leo.html">Leo</a></li>
+                        <li><a href="libra.html">Libra</a></li>
+                        <li><a href="scorpio.html">Scorpio</a></li>
+                        <li><a href="virgo.html">Virgo</a></li>
+                        <li><a href="sagittarius.html">Sagittarius</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Astrology<br>It's<span>Black Magic</span></h2>
+
+                <p> OUR SERVICES: Husband and Wife Dispute,Black Magic removal Expert,Love Spell Caster removal,Love Psychic Reader,Voodoo Spells removal, Spiritual Healing,Evil Spirit Removal,Witchcraft Spells removal,Get Ex Love Back,Jealousy and Curse,Stop
+                    Separation and Divorce,Negative Energy Removal,Family Problem Solutions.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="img5.png" class="magic"></div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img5.png" height="50px" width="50px" onclick="imgSlider('img5.png')"></li>
+            <li><img src="img3.png" height="50px" width="50px" onclick="imgSlider('img3.png')"></li>
+            <li><img src="img7.png" height="50px" width="50px" onclick="imgSlider('img7.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a class="fa fa-facebook" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-twitter" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-instagram" href="#"></a>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.magic').src = anything;
+        }
+    </script>
+    <div class="container13">
+        <h1>Contact Form</h1>
+        <form action="https://formsubmit.co/291208d3eb215cfc2610aa8e6b7bf30b" method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <select name="Continent">
+                <option>None</option>
+                <option>California</option>
+                <option>US</option>
+            </select>
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <section>
+        <div id="Contact">
+            <div id="Info">
+                <div>
+                    <h3><span class="fa fa-building"></span>Addres</h3>
+                    <p>No.991,Astrologer Siddharth,<br> KVS Complex 4<sup>th</sup>Floor,<br>5<sup>th</sup>A Cross Rd, Bank Avenue Colony,<br> Banglore.</p>
+                </div>
+                <div>
+                    <h3><span class="fa fa-mobile"></span>Contact</h3>
+                    <a href="tel:+919900530999">
+                        <p>+91 99005 30999</p>
+                    </a>
+                </div>
+                <div>
+                    <h3><span class="fa fa-envelope"></span>Mail</h3>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">astrologersiddharth@gmail.com</a></p>
+                </div>
+                <div>
+                    <h3><span class="fa fa-map-marker"></span>Location</h3>
+                    <p><a href="https://www.google.com/maps?ll=25.080659,55.140318&z=17&t=m&hl=en&gl=IN&mapclient=embed&cid=3402672788740072006">Banglore</a></p>
+                </div>
+
+            </div>
+
+            <div id="Location">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6279780605037!2d55.137727474388925!3d25.080595336415556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6bfb09660415%3A0x2f38b8df8bbd6246!2sKurukku%20Sandhu%2C%20Dubai%20Main%20Road!5e0!3m2!1sen!2sin!4v1683624759401!5m2!1sen!2sin"
+                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="menu1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <p>Copyright © 2022 www.astrologersiddharth.com - All Rights Reserved.</p>
+        <ul class="sci1">
+            <li>
+                <a class="fa fa-facebook" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-twitter" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-instagram" href="#"></a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
