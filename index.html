@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Astrologer Siddharth</title>
+    <link rel="icon" href="logo1.png">
+    <meta charset="utf-8">
+    <meta name="viweport" content="width=device-width,initial scale=1.0">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.magic').src = anything;
+        }
+    </script>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital@0;1&family=Merienda:wght@500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        body {
+            background: black;
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            position: relative;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #section1 {
+            background-image: url(back2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            position: relative;
+            max-width: 80px;
+        }
+        
+        header ul {
+            position: relative;
+            display: flex;
+        }
+        
+        header ul li {
+            list-style: none;
+        }
+        
+        header ul li a {
+            display: inline-block;
+            color: #fab619;
+            font-weight: 400;
+            margin-left: 20px;
+            text-decoration: none;
+            transform: scale(0.9);
+            font-size: 23px;
+            font-family: 'Merienda', cursive;
+        }
+        
+        header>ul li a {
+            animation: gloe 3s ease-in-out infinite;
+            animation-delay: 0.25s;
+        }
+        
+        @keyframes gloe {
+            0%,
+            100% {
+                color: #fff;
+                text-shadow: 0 0 12px #fab619, 0 0 50px #fab619, 0 0 100px #fab619;
+            }
+            10%,
+            100% {
+                color: #fab619;
+                text-shadow: none;
+            }
+        }
+        
+        header ul li a:active {
+            transform: scale(.95);
+        }
+        
+        .content {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .content .textBox {
+            position: relative;
+            max-width: 600px;
+        }
+        
+        .content .textBox h2 {
+            color: floralwhite;
+            font-size: 4em;
+            line-height: 1.4em;
+            font-weight: 500;
+        }
+        
+        .content .textBox h2 span {
+            font-size: 1.1em;
+            font-weight: 900;
+        }
+        
+        .content .textBox>h2 span {
+            animation: glow 3s ease-in-out infinite;
+            animation-delay: 0.25s;
+        }
+        
+        @keyframes glow {
+            0%,
+            100% {
+                color: #fff;
+                text-shadow: 0 0 12px#fab619, 0 0 50px #fab619, 0 0 100px #fab619;
+            }
+            10%,
+            100% {
+                color: #0f64d3;
+                text-shadow: none;
+            }
+        }
+        
+        .content .textBox p {
+            color: #0f64d3;
+            font-weight: 600;
+            padding-top: 20px;
+            word-spacing: 1px;
+        font-size: 17px;
+         line-height: 10px;
+         font-family: 'Merienda', cursive;
+        }
+        .content .textBox i{
+            padding-right: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        }
+        
+        .content .textBox>p {
+            animation: glows 3s ease-in-out infinite;
+            animation-delay: 0.25s;
+        }
+        
+        @keyframes glows {
+            0%,
+            100% {
+                color: #fff;
+                text-shadow: 0 0 12px #0f64d3, 0 0 50px #0f64d3, 0 0 100px #0f64d3;
+            }
+            10%,
+            100% {
+                color: #fab619;
+                text-shadow: none;
+            }
+        }
+        
+        .content .textBox a p{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 30px 30px;
+            background: #fab619;
+            color: black;
+            border-radius: 40px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-size: 30px;
+            transform: scale(0.8);
+            font-family: 'Merienda', cursive;
+            
+        }
+        
+        .content .textBox p:hover {
+            box-shadow: 1px 1px 15px #fab619;
+            color: #fff;
+        }
+        
+        .content .textBox a:active {
+            transform: scale(.95);
+        }
+        
+        .content .imgBox {
+            width: 600px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+            margin-top: 50px;
+        }
+        
+        .content .imgBox img {
+            max-width: 340px;
+            animation: magic;
+            animation-timing-function: linear;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes magic {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+        
+        .thumb {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        
+        .thumb li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .thumb li:hover {
+            transform: translateY(-15px);
+        }
+        
+        .sci {
+            position: absolute;
+            top: 40%;
+            right: 30px;
+            transform: translateX(-50%);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .sci li {
+            list-style: none;
+        }
+        
+        .sci li a {
+            display: inline-block;
+            margin: 5px 0;
+            transform: scale(0.6);
+            background: black;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 70px;
+            width: 70px;
+            text-decoration: none;
+            color: #fab619;
+            font-size: 30px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+        
+        .sci li a:active {
+            transform: scale(.95);
+        }
+        
+        .details h3 {
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        
+        .details h3 span {
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        .details h1 {
+            color: whitesmoke;
+            word-spacing: 4px;
+            font-size: 2em;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        
+        .details h1 span {
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        .details p {
+            color: whitesmoke;
+            position: relative;
+            justify-content: space-evenly;
+            align-items: center;
+            letter-spacing: 1px;
+            font-size: 25px;
+        }
+        
+        
+        #details {
+            color: #fab619;
+            word-spacing: 5px;
+            margin-left: 60%;
+            font-weight: bolder;
+            font-size: 1.3em;
+
+        }
+        
+        header ul li {
+            position: relative;
+        }
+        
+        header ul li ul {
+            position: absolute;
+            display: none;
+            left: 0;
+            width: 300px;
+            z-index: 1;
+        }
+        
+        header ul li ul li {
+            width: 100%;
+            height: 40px;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            overflow: hidden;
+            background-image: linear-gradient(to right, #000000, #996c05, #000000);
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        header ul li:hover>ul {
+            display: initial;
+            padding-top: 20px;
+        }
+        
+        .container11 {
+            position: relative;
+            perspective: 1000px;
+        }
+        
+        .container11 .slide-container .slide {
+            border-radius: 5px;
+            background: linear-gradient(to right, #996c05, #000000, #996c05);
+            box-shadow: 0 5px 10px #3337;
+            width: 450px;
+            padding: 20px;
+            margin: 10px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: slide .4s linear;
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: rotateX(180deg);
+            }
+        }
+        
+        .container11 .slide-container .slide>* {
+            animation: slidecontent .2s linear .4s;
+        }
+        
+        @keyframes slidecontent {
+            0% {
+                opacity: 0;
+                transform: scale(.5);
+            }
+        }
+        
+        .container11 .slide-container .slide .icon {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 90px;
+            color: #fab619;
+        }
+        
+        .container11 .slide-container .slide .user {
+            align-items: center;
+        }
+        
+        .container11 .slide-container .slide img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 15px;
+        }
+        
+        .container11 .slide-container .slide .user .user-info h3 {
+            color: whitesmoke;
+            font-size: 20px;
+        }
+        
+        .container11 .slide-container .slide .user .user-info .stars i {
+            color: #fab619;
+            font-size: 15px;
+        }
+        
+        .container11 .slide-container .slide .text {
+            color: whitesmoke;
+            font-size: 17px;
+            padding-top: 15px;
+            font-style: italic;
+        }
+        
+        .container11 .slide-container {
+            display: none;
+        }
+        
+        .container11 .slide-container.active {
+            display: block;
+        }
+        
+        .container11 #next,
+        .container11 #prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 20px;
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 5px 10px #3337;
+        }
+        
+        .container11 #next {
+            right: -100px;
+        }
+        
+        .container11 #prev {
+            left: -100px;
+        }
+        
+        .container11 #next:hover,
+        .container11 #prev:hover {
+            background: #333;
+            color: #fff;
+        }
+        
+        .h1 h1 {
+            color: whitesmoke;
+            text-align: center;
+            word-spacing: 1px;
+            font-weight: bold;
+        }
+        
+        .h1 h1 span {
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        .h1 p {
+            color: whitesmoke;
+            text-align: center;
+            word-spacing: 1px;
+            font-weight: bold;
+            font-size: .9em;
+        }
+        
+        .h1 p span {
+            color: #fab619;
+            font-weight: bolder;
+            font-family: 'Merienda', cursive;
+        }
+        
+       
+        footer {
+            position: relative;
+            width: 100%;
+            background: #fab619;
+            min-height: 100px;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        footer .menu1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        footer .menu1 li {
+            list-style: none;
+        }
+        
+        footer .menu1 li a {
+            font-size: 1.2em;
+            color: #000;
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+            opacity: 0.75;
+        }
+        
+        footer .menu1 li a:hover {
+            opacity: 1;
+        }
+        
+        footer p {
+            color: #000;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        footer .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url(wave.png);
+            background-size: 1000px 100px;
+        }
+        
+        footer .waves #wave1 {
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: wave1 4s linear infinite;
+        }
+        
+        footer .waves #wave2 {
+            z-index: 999;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: wave2 4s linear infinite;
+        }
+        
+        footer .waves #wave3 {
+            z-index: 1000;
+            opacity: 0.2;
+            bottom: 15px;
+            animation: wave1 3s linear infinite;
+        }
+        
+        footer .waves #wave4 {
+            z-index: 999;
+            opacity: 0.7;
+            bottom: 20px;
+            animation: wave2 3s linear infinite;
+        }
+        
+        @keyframes wave1 {
+            0% {
+                background-position-x: 1000px;
+            }
+            100% {
+                background-position-x: 0px;
+            }
+        }
+        
+        @keyframes wave2 {
+            0% {
+                background-position-x: 0px;
+            }
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+        
+        .sci1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sci1 li {
+            list-style: none;
+            margin: 10px;
+        }
+        
+        .sci1 li a {
+            display: inline;
+            margin: 5px 0;
+            background: black;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 40px;
+            width: 40px;
+            text-decoration: none;
+            color: #fab619;
+            font-size: 20px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+        
+        .sci1 li a:hover {
+            transform: translateY(-15px);
+        }
+        
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .heading h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 120px;
+            color: whitesmoke;
+        }
+        
+        #sticky:nth-child(2n+1) {
+            height: auto;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        
+        #sticky:nth-child(2n+2) {
+            height: auto;
+            display: flex;
+        }
+        
+        #sticky .imgbox {
+            position: sticky;
+            top: 0;
+            min-width: 50%;
+            height: 100vh;
+        }
+        
+        #sticky .imgbox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 40px;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+        
+        #sticky:nth-child(2n+1) .content2 {
+            padding: 50px;
+        }
+        
+        #sticky:nth-child(2n+2) .content2 {
+            padding: 50px;
+        }
+        
+        #sticky .content2 h2 {
+            margin: 0 0 20px;
+            padding: 0;
+            font-size: 50px;
+            color: whitesmoke;
+            text-align: center;
+        }
+        
+        #sticky .content2 span {
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        #sticky .content2 p {
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+            text-align: justify;
+            color: whitesmoke;
+        }
+      
+        
+        .banner {
+            width: 100%;
+            height: 100hv;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .banner video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .banner .details {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .container {
+            position: relative;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        
+        .container .card {
+            position: relative;
+            height: 400px;
+            background: transparent;
+            box-shadow: 0 5px 10px #fff;
+            display: flex;
+            width: 45%;
+            margin: 30px 0;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+        
+        .container .card .imgBx {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+            border-radius: 20px;
+            left: -230px;
+        }
+        
+        .container .card:hover .imgBx {
+            width: 130px;
+            height: 130px;
+            left: -75px;
+            top: calc(50% - 75px);
+            transition: 0.5s ease-in-out;
+            border-radius: 50px;
+        }
+        
+        .container .card .imgBx img {
+            height: 40%;
+        }
+        
+        .container .card:hover img {
+            width: 130px;
+            height: 130px;
+        }
+        
+        .container .card .content {
+            position: absolute;
+            right: 0;
+            width: calc(100% - 75px);
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container .card .content h3 {
+            margin-bottom: 5px;
+            font-size: 24px;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        
+        .container .card .content h3 span {
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        .container .card .content #a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #fab619;
+            text-decoration: none;
+            color: #333;
+            border-radius: 20px;
+        }
+        
+        .container .card .content #a:hover {
+            color: #333;
+            background: #fab619;
+            box-shadow: 0 0 10px #fab619, 0 0 4px #fab619, 0 0 80px #fab619;
+        }
+        
+        @media(max-width:992px) {
+            .container {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .container .card {
+                width: 400px;
+                margin-left: -10px;
+            }
+        }
+        
+        @media(max-width:768px) {
+            .container .card {
+                max-width: 300px;
+                flex-direction: column;
+                height: auto;
+            }
+            .container .card .imgBx {
+                position: relative;
+            }
+            .container .card .imgBx,
+            .container .card:hover .imgBx {
+                width: 100%;
+                left: 0;
+            }
+            .container .card .imgBx img,
+            .container .card:hover .imgBx img {
+                max-width: 100px;
+            }
+            .container .card .content {
+                position: relative;
+                width: 100%;
+            }
+        }
+        
+        .container p a {
+            color: grey;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        .container p a:hover{
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        #title {
+            color: whitesmoke;
+            text-align: center;
+            padding-top: 60px;
+            font-weight: bold;
+        }
+        
+        #title span {
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        #neon {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+        
+        #neon a {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fab619;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 34px;
+            overflow: hidden;
+            transition: 0.2s;
+            font-family: 'Merienda', cursive;
+        }
+        
+        #neon a:hover {
+            color: #333;
+            background: #fab619;
+            box-shadow: 0 0 10px #fab619, 0 0 4px #fab619, 0 0 80px #fab619;
+            transition-delay: 1s;
+            border-radius: 100px;
+        }
+        
+        #neon a span {
+            position: absolute;
+            display: block;
+        }
+        
+        #neon a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #fab619);
+        }
+        
+        #neon a:hover span:nth-child(1) {
+            left: 100%;
+            transition: 1s;
+        }
+        
+        #neon a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #fab619);
+        }
+        
+        #neon a:hover span:nth-child(3) {
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+        
+        #neon a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #fab619);
+        }
+        
+        #neon a:hover span:nth-child(2) {
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+        }
+        
+        #neon a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #fab619);
+        }
+        
+        #neon a:hover span:nth-child(4) {
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+        }
+        
+        #container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .testimonial {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            padding: 50px 0;
+            overflow: hidden;
+        }
+        
+        .testimonial .image {
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .testimonial .moj{
+            width: 100%;
+            height: 300px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            padding-top: 20px;
+        }
+        
+        .testimonial .slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+        
+        .testimonial .slide p {
+            padding: 0 100px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            padding-top: 15px;
+            color: whitesmoke;
+        }
+        
+        
+        
+        .testimonial .slide i {
+            font-size: 50px;
+            color: #fab619;
+        }
+        
+        .testimonial .slide .details {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .testimonial .slide .details .name {
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.2em;
+        }
+        .testimonial .slide .details .main{
+            font-weight: 600;
+            color: #fff;
+            font-size: 3em;
+        }
+        .testimonial .slide .details a p{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 20px 30px;
+            background: #fab619;
+            color: black;
+            border-radius: 40px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-size: 20px;
+            transform: scale(0.8);
+            font-family: 'Merienda', cursive;
+            
+        }
+        
+        .testimonial .slide .details p:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        .testimonial .slide .details a:active {
+            transform: scale(.95);
+        }
+        
+        .testimonial .swiper-pagination-bullet {
+            background-color: #fab619;
+            width: 15px;
+            height: 15px;
+        }
+        
+        .testimonial .swiper-pagination-bullet:hover {
+            box-shadow: 1px 1px 15px #ebe8e1;
+            background-color: #fde7b4;
+        }
+        
+        .testimonial .nav-btn {
+            color: #333;
+            background-color: #fab619;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        .testimonial .nav-btn:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        .testimonial .nav-btn::after,
+        .testimonial .nav-btn::before {
+            font-size: 20px;
+        }
+        
+        .testimonial #swi {
+            background-color: #fab619;
+            color: #333;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .testimonial a {
+            color: #fab619;
+        }
+        
+        .testimonial #swi:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        #nameload h1 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            transform: translateY(-50%);
+            width: 80%;
+            text-align: center;
+            color: #fab619;
+            font-size: 3rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 0.2rem;
+        }
+        
+        #nameload h1 span {
+            opacity: 0;
+            display: inline-block;
+            animation: nameload 1s linear forwards;
+            text-shadow: 1px 1px 15px #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        @keyframes nameload {
+            0% {
+                opacity: 0;
+                transform: rotateY(90deg);
+                filter: blur(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0px);
+            }
+        }
+        
+        #nameload h1 span:nth-child(1) {
+            animation-delay: 0.25s;
+        }
+        
+        #nameload h1 span:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        
+        #nameload h1 span:nth-child(3) {
+            animation-delay: 0.75s;
+        }
+        
+        #nameload h1 span:nth-child(4) {
+            animation-delay: 1s;
+        }
+        
+        #nameload h1 span:nth-child(5) {
+            animation-delay: 1.25s;
+        }
+        
+        #nameload h1 span:nth-child(6) {
+            animation-delay: 1.5s;
+        }
+        
+        #nameload h1 span:nth-child(7) {
+            animation-delay: 1.75s;
+        }
+        
+        #nameload h1 span:nth-child(8) {
+            animation-delay: 2s;
+        }
+        
+        #nameload h1 span:nth-child(9) {
+            animation-delay: 2.25s;
+        }
+        
+        #nameload h1 span:nth-child(10) {
+            animation-delay: 2.75s;
+        }
+        
+        #nameload h1 span:nth-child(11) {
+            animation-delay: 3s;
+        }
+        
+        #nameload h1 span:nth-child(12) {
+            animation-delay: 3.25s;
+        }
+        
+        #nameload h1 span:nth-child(13) {
+            animation-delay: 3.5s;
+        }
+        
+        #nameload h1 span:nth-child(14) {
+            animation-delay: 4s;
+        }
+        
+        #nameload h1 span:nth-child(15) {
+            animation-delay: 4.5s;
+        }
+        
+        #nameload video {
+            overflow: hidden;
+            object-fit: cover;
+        }
+        
+        #preloader {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: #000;
+        }
+        
+        .center {
+            display: flex;
+            text-align: center;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ring {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: ring 2s linear infinite;
+        }
+        
+        @keyframes ring {
+            0% {
+                transform: rotate(0deg);
+                box-shadow: 1px 5px 2px #e65c00;
+            }
+            50% {
+                transform: rotate(180deg);
+                box-shadow: 1px 5px 2px #18b201;
+            }
+            100% {
+                transform: rotate(360deg);
+                box-shadow: 1px 5px 2px #0456c8;
+            }
+        }
+        
+        .ring::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+            border-radius: 50%;
+        }
+        
+        #loaded {
+            color: #737373;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 200px;
+            animation: text 3s ease-in-out infinite;
+        }
+        
+        @keyframes text {
+            50% {
+                color: #000;
+            }
+        }
+        #poojai{
+        justify-content: center;
+        align-items: center;
+        }
+       #poojai ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+       
+       }
+       #poojai ul li{
+        position: relative;
+        list-style: none;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 10px;
+        box-sizing: border-box;
+        
+
+       }
+       #poojai ul li::before,
+       #poojai ul li::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #737373;
+        border-radius: 50%;
+        filter: blur(20px);
+        opacity: 0;
+        transition: 1s;
+        z-index: -1;
+       }
+       #poojai ul li::after{
+        filter: blur(40px);
+       }
+       #poojai ul li:hover::before,
+       #poojai ul li:hover::after{
+        opacity: 1;
+       }
+       #poojai ul li a{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        text-align: center;
+        line-height: 80px;
+       }
+       #poojai ul li a img{
+        text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+        transition: 0.5s;
+        transform: rotateY(0deg) scale(0.8);
+        opacity: 0.2;
+width: 100px;
+justify-content: center;
+align-items: center;
+padding-top: 30px;
+       }
+       #poojai ul li a:hover img{
+        opacity: 1;
+transform: scale(1.2);
+
+       }
+       #poojai ul li:nth-child(1) a,
+       #poojai ul li:nth-child(1)::before,
+       #poojai ul li:nth-child(1)::after{
+        background: linear-gradient(45deg,#fab619,#e64a19);
+        border-radius: 50%;
+       }
+       #poojai ul li:nth-child(2) a,
+       #poojai ul li:nth-child(2)::before,
+       #poojai ul li:nth-child(2)::after{
+        background: linear-gradient(45deg,#fab619,#e64a19);
+        border-radius: 50%;
+       }
+       #poojai ul li:nth-child(3) a,
+       #poojai ul li:nth-child(3)::before,
+       #poojai ul li:nth-child(3)::after{
+        background: linear-gradient(45deg,#fab619,#e64a19);
+        border-radius: 50%;
+       }
+       #poojai ul h1{
+        color:whitesmoke;
+        text-align: center;
+        padding-top: 5px;
+        font-size: 25px;
+        font-family: 'Merienda', cursive;
+        margin-left: 30px;
+        
+       }
+       #poojai ul h1 span{
+        color: #fab619;
+        font-size: 25px;
+        font-family: 'Merienda', cursive;
+       }
+       #pooja{
+        text-align: center;
+        color: whitesmoke;
+        font-family: 'Merienda', cursive;
+        font-weight: 500;
+       }
+       #pooja span{
+        color: #fab619;
+        font-family: 'Merienda', cursive;
+        font-weight: 500;
+       }
+
+       .container13 {
+            display: grid;
+            place-items: center;
+            padding-top: 20px;
+        }
+        
+        .container13 h1 {
+            margin-bottom: 2rem;
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 24rem;
+            gap: 1rem;
+        }
+        
+        input,
+        select,
+        textarea {
+            padding: 1.5rem;
+            background: transparent;
+            border: 1px solid #333;
+            box-shadow: 1px 1px 15px #f0efec;
+            border-radius: 20px;
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        input:hover,
+        select:hover,
+        textarea:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        button {
+            color: #333;
+            background: #fab619;
+            border-radius: 20px;
+            width: 100px;
+            height: 40px;
+            font-size: 1em;
+            margin-left: 40%;
+            margin-top: 15px;
+            border: none;
+            font-family: 'Merienda', cursive;
+        }
+        
+        button:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+        
+        option {
+            color: #333;
+            background: #fab619;
+        }
+        
+        option:hover {
+            box-shadow: 1px 1px 15px #fab619;
+        }
+
+        #Contact {
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        #Contact span {
+            display: inline;
+            margin: 5px 0;
+            background: #fab619;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 40px;
+            width: 40px;
+            color: #333;
+            font-size: 20px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #Info p {
+            color: whitesmoke;
+            font-family: 'Merienda', cursive;
+        }
+        
+        #Info a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding-top: 10px;
+            font-family: 'Merienda', cursive;
+        }
+        
+        #Info h3 {
+            color: #fab619;
+            font-family: 'Merienda', cursive;
+        }
+        
+        #Location {
+            margin-left: 20%;
+        }
+
+        ::-webkit-scrollbar{
+            width: 13px;
+        }
+        ::-webkit-scrollbar-track{
+            border-radius: 15px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+        }
+        ::-webkit-scrollbar-thumb{
+            background: #fab619;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+  
+
+    <section id="section1">
+
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo1.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services +</a>
+                    <ul>
+                        <li><a href="ser1.html">Husband and Wife Dispute</a></li>
+                        <li><a href="ser.html">Black Magic removal Expert</a></li>
+                        <li><a href="ser2.html">Love Spell Caster removal </a></li>
+                        <li><a href="ser3.html">Love Psychic Reader</a></li>
+                        <li><a href="ser4.html">Voodoo Spells removal </a></li>
+                        <li><a href="ser5.html">Evil Spirit Removal</a></li>
+                        <li><a href="ser6.html">Spiritual Healing</a></li>
+                        <li><a href="ser7.html">Get Ex Love Back</a></li>
+                        <li><a href="ser8.html">Jealousy and Curse</a></li>
+                        <li><a href="ser9.html">Stop Separation and Divorce</a></li>
+                        <li><a href="ser10.html">Negative Energy Removal</a></li>
+                        <li><a href="ser11.html">Family Problem Solutions</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pooja Service+</a>
+                    <ul>
+                        <li><a href="hanuman.html">Hanuman pooja</a></li>
+                        <li><a href="shivan.html"> Lord Shivan Pooja</a></li>
+                        <li><a href="kali pooja.html"> Kali Pooja</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zodiac Sign+</a>
+                    <ul>
+                        <li><a href="capricon.html">Capricon</a></li>
+                        <li><a href="aquarius.html">Aquarius</a></li>
+                        <li><a href="pisces.html">Pisces </a></li>
+                        <li><a href="aries.html">Aries</a></li>
+                        <li><a href="taurus.html">Taurus </a></li>
+                        <li><a href="gemini.html">Geminil</a></li>
+                        <li><a href="cancer.html">Cancer</a></li>
+                        <li><a href="leo.html">Leo</a></li>
+                        <li><a href="libra.html">Libra</a></li>
+                        <li><a href="scorpio.html">Scorpio</a></li>
+                        <li><a href="virgo.html">Virgo</a></li>
+                        <li><a href="sagittarius.html">Sagittarius</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </header>
+        <div class="content">
+
+            <div class="textBox">
+                <h2> <span>Ast</span>rologer<br>Sidd<span>harth</span></h2>
+
+                <p><i class="fa fa-angle-right"></i>Black Magic removal Expert</p>
+                  <p><i class="fa fa-angle-right"></i>Husband and Wife Dispute</p>
+                  <p><i class="fa fa-angle-right"></i>Love Spell Caster removal </p>
+                  <p><i class="fa fa-angle-right"></i>Get Ex Love Back</p>
+                  <p><i class="fa fa-angle-right"></i>Family Problem Solutions</p>
+                    <a href="tel:+919900530999">
+                        <p>+91 99005 30999</p>
+                    </a>
+            </div>
+            <div class="imgBox">
+                <img src="img5.png" class="magic"></div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img5.png" height="50px" width="50px" onclick="imgSlider('img5.png')"></li>
+            <li><img src="img3.png" height="50px" width="50px" onclick="imgSlider('img3.png')"></li>
+            <li><img src="img7.png" height="50px" width="50px" onclick="imgSlider('img7.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a class="fa fa-facebook" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-twitter" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-instagram" href="#"></a>
+            </li>
+        </ul>
+
+    </section>
+    <section id="container">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    
+                    <img src="Black magic-removal@2x.png" class="moj">
+                    <a href="ser.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Black Magic Removal</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Husband and wife dispute@2x.png" class="moj">
+                    <a href="ser1.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Husband and Wife problem</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Love spell caster removal00@2x.png" class="moj">
+                    <a href="ser2.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Love spell Caster Removal</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Love psychic reader00@2x.png" class="moj">
+                    <a href="ser3.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Love Psychic Reader</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Voodoo Spell Caster Removal00@2x.png" class="moj">
+                    <a href="ser4.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Voodoo Spells removal</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Evil spirit removal00@2x.png" class="moj">
+                    <a href="ser5.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Evil Spirit Removal</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Spritual healing00@2x.png" class="moj">
+                    <a href="ser6.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main"> Spiritual Healing</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Get ex love back@2x.png" class="moj">
+                    <a href="ser7.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Get Ex Love Back</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Jealousy and curse@2x.png" class="moj">
+                    <a href="ser8.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Jealousy and Curse</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Stop separation and divorce00@2x.png" class="moj">
+                    <a href="ser9.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Stop Separation and Divorce</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="Negative energy removal00@2x.png" class="moj">
+                    <a href="ser10.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Negative Energy Removal</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="family problem.png" class="moj">
+                    <a href="ser11.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="main">Family Problem Solutions</span>
+                        <a href="tel:+919900530999">
+                            <p>+91 99005 30999</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="script.js">
+    </script>
+
+
+
+   
+
+    <h1 id="title">Why Choose <span>Astrologer Siddharth ?</span></h1>
+
+
+    <section id="body">
+
+        <div class="container">
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="vooda.gif" width="150px" style="border-radius: 50px;">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3> Read Our <span>Services</span></h3>
+                        <p><a href="ser1.html"> Husband and Wife Dispute</a><br>
+                            <a href="ser.html"> Black Magic removal Expert</a><br>
+                            <a href="ser2.html"> Love Spell Caster removal</a> <br>
+                            <a href="ser3.html">Love Psychic Reader</a><br>
+                            <a href="ser4.html">  Voodoo Spells removal</a><br>
+                            <a href="ser5.html">  Spiritual Healing</a><br>
+                            <a href="ser6.html"> Evil Spirit Removal</a><br>
+                            <a href="ser7.html">  Get Ex Love Back</a><br>
+                            <a href="ser8.html"> Jealousy and Curse</a><br>
+                            <a href="ser9.html">  Stop Separation and Divorce</a><br>
+                            <a href="ser10.html">  Negative Energy Removal</a><br>
+                            <a href="ser11.html">  Family Problem Solutions</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="neon">
+        <a href="#container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>Click Our Services
+        </a>
+
+    </section>
+    <section id="container">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="blackmagic_1.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Black Magic Removal Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may visit and
+                        mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Black Magic Removal</span>
+                        
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="husband-wife-dispute.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Husband and Wife problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may visit
+                        and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser1.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Husband and Wife problem</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="love-spell-caster.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Love spell Caster Removal problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you
+                        may visit and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser2.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Love spell Caster Removal</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="love-physic.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Love Psychic Reader problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may
+                        visit and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser3.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Love Psychic Reader</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="vooda.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Voodoo Spells removal problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may
+                        visit and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser4.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Voodoo Spells removal</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="evil-spirit-remover.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Evil Spirit Removal problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may
+                        visit and mail him at <a href="Enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser5.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Evil Spirit Removal</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="spiritual-healing.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Spiritual Healing problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may visit
+                        and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser6.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name"> Spiritual Healing</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="get-ex-love-back.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Get Ex Love Back problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may visit
+                        and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser7.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Get Ex Love Back</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="jealousy-curse.gif" class="image">
+                    <p> Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Jealousy and Curse problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you may
+                        visit and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser8.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Jealousy and Curse</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="stop-seperation.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Stop Separation and Divorce problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or
+                        you may visit and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser9.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Stop Separation and Divorce</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="negative-energy-removal.gif" class="image">
+                    <p> Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Negative Energy Removal problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you
+                        may visit and mail him at <a href="#">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser10.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Negative Energy Removal</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="family.gif" class="image">
+                    <p>Master Siddharth comes from lineage of astrologers who have been practicing it over 200 years and providing services in US ,UK, Australia.You can book a meeting with Astrologer Siddharth through the contact details open on his site
+                        and bring back the peace and calm once again into your life. Consult our Family Problem Solutions problem Expert Astrologer Siddharth in California to solve all problems with the mobile number<a href="tel:"9900530999> 099005 30999</a> or you
+                        may visit and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a> at your convenient time.</p>
+                    <a href="ser11.html" id="swi">Read More</a>
+                    <i class="fa fa-quote-right icon"></i>
+                    <div class="details">
+                        <span class="name">Family Problem Solutions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="script.js">
+    </script>
+
+    <h1 id="pooja">Read Our <span>Pooja Services :</span></h1>
+<section id="poojai">
+    
+<ul>
+   <h1> <li><a href="shivan.html"><img src="icons-01.png" ></a></li> <span>shivan</span> Pooja</h1>
+   <h1> <li><a href="kali pooja.html"><img src="icons-02.png" ></a></li> <span>Kali</span> Pooja</h1>
+   <h1><li><a href="hanuman.html"><img src="icons-03.png" ></a></li> <span>Hanuman</span> Pooja</h1>
+</ul>
+</section>
+    <div id="sticky">
+
+        <div class="imgbox">
+            <img src="shiva1.jpg"></div>
+        <div class="content2">
+            <h2>Master Siddharth<span> services</span></h2>
+            <p>Astrologer Siddharth won't just get both the accomplices in the groove again however he won't likewise guarantee that the relationship ever face a terrible time in future once more. In this way, assuming you know somebody in your known ones
+                who are having relationship related issues, simply propose them the name of one of the top astrologers on the planet. You can conquer every one of the issues and you can begin a blissful life once more. All you really want is a powerful
+                answer for mend the issues in your lives.Many individuals are suffering a lot totally uninformed about the attacks made by no other than their siblings, closest friends, partners and family members using the help of the Black Magicians
+                or the spirit world.<br><br> Consistently numerous prosperous and blissful families are being ruined and figuring on methods of how to get out of Black Magic. Black Magic Removal Expert Astrologer Siddharth will help you get rid of your
+                Black Magic issues.The astrologer master Siddharth can help you do just that. With his expertise in astrology and deep understanding of the Love Spell Caster, he can provide you with a wide range of solutions that will help you break free
+                from its curse.<br><br> From powerful mantras to healing rituals, Siddharth is sure to have the right solution for your situation. He is also an expert in using a variety of ancient and modern spiritual practices which will help you eliminate
+                the spell’s negative effects on your life. Contact him today and get rid of this love spell quickly and easily!Master Siddharth is a renowned love psychic reader and astrologer who has been helping people find solutions to their love-related
+                problems for almost two decades.<br><br> His expertise in astrology and tarot card reading has made him the go-to person for those seeking guidance and understanding about their romantic relationships. He uses his knowledge of astrology
+                to provide insight into the possibilities of an individual's future, helping them make informed decisions on how to proceed with their relationships. Whether it be advice on how to find true love or how to keep it, Master Siddharth is
+                here to help you take control of your romantic life. <br><br>Master Siddharth is an experienced astrologer who has many years of experience in providing voodoo spells removal services. He provides his services to help people get rid of
+                the negative energies and bad luck associated with voodoo spells and curses. He also specializes in removing curses, hexes and other forms of black magic that can cause serious problems in one's life. With his expertise, he can help you
+                get rid of the negative forces that are interfering with your life. <br><br>
+
+            </p>
+        </div>
+    </div>
+
+    <div id="sticky">
+        <div class="imgbox">
+            <img src="2.webp"></div>
+        <div class="content2">
+            <h2>Why Choose Astrologer<span> Siddharth</span> </h2>
+            <p>Master Siddharth is an experienced astrologer, spiritual healer and mentor who has been helping people from all walks of life for more than 200 years. His knowledge and expertise in the field of spiritual healing have made him one of the most
+                sought-after healers in California. He provides a holistic approach to healing, which includes astrology, meditation, yoga, mantra chanting and other traditional Indian healing methods. He works to unlock the potential within individuals
+                so they can realize their true potential and move towards a better life. With his help, many people have found relief from physical pain, emotional turmoil and mental blockages. Master Siddharth has helped many find their path to inner
+                peace and greater well-being.
+
+
+
+
+                <br><br> He can also give you advice on how to maintain a healthy relationship with your partner or ex-lover so that neither one of you have to suffer any heartache or sadness ever again. Don't let this chance pass by, and avail Master
+                Siddharth's services today and start living life happily!<br><br>He believes that understanding the dynamics of jealousy and curse can help us understand our own lives better and even use it for positive outcomes like relationship building,
+                stress-management, problem-solving, self-improvement, etc. Master Siddharth is committed to helping people learn more about this mysterious force so that they may be able to use it for the greater good.<br><br>Family problems can be difficult
+                to solve on your own, and often require the help of a professional. The astrologer master Siddharth is an experienced and reputable astrologer who has helped countless families find solutions for their problems. With his expertise in the
+                fields of astrology, numerology, horoscope, and tarot readings, Master Siddharth is able to provide comprehensive advice and analysis to help families find the best possible solutions for their issues. Through his deep understanding of
+                family dynamics, Master Siddharth can provide powerful insights into how to best resolve challenging family situations. He takes a holistic approach to problem-solving that looks at all aspects of the family’s dynamics in order to arrive
+                at the most beneficial outcome for everyone involved.<br><br>
+            </p>
+        </div>
+    </div>
+    <div id="sticky">
+        <div class="imgbox">
+            <img src="kaliamman-01.jpg"></div>
+        <div class="content2">
+            <h2>Master Siddharth<span> Pooja services</span></h2>
+            <p>
+                Jai Hanuman Pooja is one of the most sacred and ancient rituals that have been practiced for centuries. The Astrologer Master Siddharth is one of the renowned experts in this field, who has been performing this pooja with utmost devotion and sincerity.
+                With his extensive knowledge and years of experience, he ensures that all the rituals are performed according to the traditions. He believes in giving his best every time to ensure that people seek divine blessings from Lord Hanuman in
+                order to bring positive changes in their life.
+
+                <br> Pooja of Lord Hanuman is considered very auspicious and blessed by the Lord himself. This Pooja can be performed to invoke the blessings of Hanumanji, who is known for his power and strength. For this purpose, one should seek the
+                help of an experienced astrologer master Siddharth who comes from a long line of astrologers and has extensive knowledge about all aspects of Hindu rituals.
+                <br><br>Lord Shivan is one of the most revered gods in Hindu mythology. The ritual of performing poojas in his honour has been practiced since ancient times. Astrologer master Siddharth is a renowned expert in this field, having performed
+                many successful pujas for people around the world. He has gained extensive knowledge and experience in performing poojas related to Shivan worship and has helped many people attain peace, prosperity and success through his rituals. He
+                is an expert in astrological calculations which are essential to perform the pooja with utmost accuracy. His services include consultations on how to perform poojas, purohits to conduct them, puja materials as well as online puja services
+                so that devotees can get blessings from Lord Shiva without any hassle.<br><br>Kali Pooja is one of the most sacred and ancient rituals that have been practiced for centuries. The Astrologer Master Siddharth is one of the renowned experts
+                in this field, who has been performing this pooja with utmost devotion and sincerity. With his extensive knowledge and years of experience, he ensures that all the rituals are performed according to the traditions. He believes in giving
+                his best every time to ensure that people seek divine blessings from kali amman in order to bring positive changes in their life.<br>You can book a meeting with Astrologer Siddharth through the contact details open on his site and bring
+                back the peace and calm once again into your life. Consult our Expert Astrologer Siddharth in California to solve all problems and Pooja Services with the mobile number<a href="#"> 9980337733</a> or you may visit and mail him at <a href="mailto:enquiry@mastersiddharth.com">Enquiry@mastersiddharth.com</a>
+            </p>
+        </div>
+    </div>
+
+    <section>
+
+        <div class="details">
+
+            <center>
+                <h3>Astrologer Siddharth <span>ACHIEVEMENTS IN ASTROLOGY :</span></h3>
+            </center><br><br>
+            <h1>Siddharth <span> Expert in California Astrology :</span></h1><br>
+
+
+
+            <p>Astrologer Siddharth is praised by all his followers and people as a best Astrologerin California. He can predict your problems by grabbing your expression itself. And his healing process has no words to say such a great treatment with caring.
+                <br><br> Like these there are many skills and achievements are done by our great Astrological gift Astrologer Siddharth. His doors are always welcomes you with love and caring. He is situated in a peaceful place with natural resources.
+                Now he is also available in online sites to solve your problems from long distance.<br><br> The astrology services which are offered by Astrologer Siddharth are- negative energy removal, reunite with loved one, horoscope reading, and more.
+                He is skilled in offering practical astrology solutions to people who are battling various problems. He has given many years of his life to studying the mysteries of astrology. Master Siddharth has gained an immense reputation by offering
+                so many astrology solutions. He has knowledge in the removal of negative energy. Master Siddharth has helped thousands of lovers in reuniting, as well as countless heartbroken people in reuniting with their ex-love.<br><br> Astrologer
+                Siddharth is a renowned spiritual healer who has helped many troubled and unhappy individuals. He employs ancient Indian prayers with his Vedic knowledge to help you eradicate negativity, depression, and anxiety. Siddharth Astrologer's
+                professional services can help you reestablish a level of sentimental satisfaction in your life. Bring happiness to your life by consulting him. Whether you are in California or Canada, you can benefit from his services all around the
+                world.
+            </p><br><br>
+            <span id="details">-Astrologer Siddharth</span>
+        </div>
+
+
+    </section>
+
+    <div class="container13">
+        <h1>Contact Form</h1>
+        <form action="https://formsubmit.co/291208d3eb215cfc2610aa8e6b7bf30b" method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <select name="Continent">
+                <option>None</option>
+                <option>California</option>
+                <option>US</option>
+            </select>
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <section>
+        <div id="Contact">
+            <div id="Info">
+                <div>
+                    <h3><span class="fa fa-building"></span>Addres</h3>
+                    <p>No.991,Astrologer Siddharth,<br> KVS Complex 4<sup>th</sup>Floor,<br>5<sup>th</sup>A Cross Rd, Bank Avenue Colony,<br> Banglore.</p>
+                </div>
+                <div>
+                    <h3><span class="fa fa-mobile"></span>Contact</h3>
+                    <a href="tel:+919900530999">
+                        <p>+91 99005 30999</p>
+                    </a>
+                </div>
+                <div>
+                    <h3><span class="fa fa-envelope"></span>Mail</h3>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">astrologersiddharth@gmail.com</a></p>
+                </div>
+                <div>
+                    <h3><span class="fa fa-map-marker"></span>Location</h3>
+                    <p><a href="https://www.google.com/maps?ll=25.080659,55.140318&z=17&t=m&hl=en&gl=IN&mapclient=embed&cid=3402672788740072006">Banglore</a></p>
+                </div>
+
+            </div>
+
+            <div id="Location">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6279780605037!2d55.137727474388925!3d25.080595336415556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6bfb09660415%3A0x2f38b8df8bbd6246!2sKurukku%20Sandhu%2C%20Dubai%20Main%20Road!5e0!3m2!1sen!2sin!4v1683624759401!5m2!1sen!2sin"
+                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h1">
+
+        <h1>Client <span>Testimonials</span></h1><br><br>
+        <p>What Our Clients Say about <span>-Astrologer Siddharth</span></p>
+        <section id="nameload">
+            <video src="smoke.mp4" autoplay muted></video>
+            <h1>
+                <span>9</span>
+                <span>9</span>
+                <span>0</span>
+                <span>0</span>
+                <span>5</span>
+                <span>3</span>
+                <span>0</span>
+                <span>9</span>
+                <span>9</span>
+                <span>9</span>
+
+            </h1>
+        </section>
+    </div>
+
+    <section id="section2">
+
+        <div class="banner">
+            <video autoplay muted loop> 
+                    <source src="backv.mp4" type="video/mp4">
+                </video>
+            <div class="container11">
+                <div class="slide-container active">
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe1.jpg">
+                            <div class="user-info">
+                                <h3>Rajan Sahani</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">I'm profoundly touched and appreciative to Astrologer Siddharth as he figured out my monetary issues so quickly. Not just as a astrologer; he connected with me as a companion, Philosopher, and Spiritual aide in the midst of my
+                            incredible need. With his help; I encountered the ideal degree of inward harmony and fulfillment.</p>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe2.jpg">
+                            <div class="user-info">
+                                <h3>Steve Brown</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">Astrologer Siddharth has been helping people lead a better life for years now. He has an impressive track record of providing accurate and insightful readings to his clients. His expertise in astrology and ability to provide tailored
+                            advice have earned him praises from his customers.</p>
+                    </div>
+                </div>
+
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe3.jpg">
+                            <div class="user-info">
+                                <h3>john deo</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">Here, we present some testimonials from customers who have benefitted from Astrologer Siddharth's services. These reviews provide a glimpse into the level of satisfaction that his clients experience after consulting with him. We
+                            hope these reviews will help you make an informed decision about choosing Astrologer Siddharth for your astrological needs.</p>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe4.jpg">
+                            <div class="user-info">
+                                <h3>Mr. Mithun Kumar</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">Siddharth is one of the most sought-after astrologers in California. His clients have nothing but praise for his services. Here, we take a look at some of the testimonials from customers who have benefited from Siddharth’s astrological
+                            advice and guidance. They share their stories of how Siddharth’s predictions and remedies have helped them overcome their life’s challenges and achieve success in their endeavors. Read on to find out what they have to say about
+                            Astrologer Siddharth!</p>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe5.jpg">
+                            <div class="user-info">
+                                <h3>Mr. Shiva Kumar</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">"Siddharth's expertise in removing black magic spells is truly remarkable. He was able to help me get rid of a curse that had been affecting my life for years. I am now able to live a happier and more fulfilled life thanks to him."</p>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe6.jpg">
+                            <div class="user-info">
+                                <h3>Mr.Arunachalam</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">"My family was going through a tough time and we were all feeling drained and negative. After visiting Siddharth, we noticed a significant improvement in our overall well-being. He has an incredible ability to bring positivity into people's lives."</p>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe7.jpg">
+                            <div class="user-info">
+                                <h3>Mr.Sandeep Raj</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">"I was skeptical about astrology before meeting Siddharth, but he completely changed my perspective. His guidance and remedies have helped me improve the quality of my life and I am forever grateful."</p>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+
+                    <div class="slide">
+                        <i class="fa fa-quote-right icon"></i>
+                        <div class="user">
+                            <img src="reviwe8.jpg">
+                            <div class="user-info">
+                                <h3>Mr.SuriyaVel</h3>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">"Siddharth is not only a highly skilled astrologer, but also a compassionate and kind individual. He truly cares about his clients and goes above and beyond to help them achieve their goals and overcome obstacles."</p>
+                    </div>
+                </div>
+
+                <div id="next" class="fa fa-chevron-right" onclick=" next()"></div>
+                <div id="prev" class="fa fa-chevron-left" onclick="prev()"></div>
+
+            </div>
+        </div>
+        <script>
+            let slides = document.querySelectorAll('.slide-container');
+            let index = 0;
+
+            function next() {
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+            }
+
+            function prev() {
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+        </script>
+    </section>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="menu1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <p>Copyright © 2022 www.astrologersiddharth.com - All Rights Reserved.</p>
+        <ul class="sci1">
+            <li>
+                <a class="fa fa-facebook" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-twitter" href="#"></a>
+            </li>
+            <li>
+                <a class="fa fa-instagram" href="#"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+
+</html>
